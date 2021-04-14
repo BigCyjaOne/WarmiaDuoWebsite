@@ -1,0 +1,23 @@
+{
+  "name": "warmiaduo",
+  "version": "1.0.0",
+  "description": "website of warmiaduo ensemble",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigCyjaOne/WarmiaDuoWebsite.git"
+  },
+  "author": "Rafal Gorczynski & Krystian Cabaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BigCyjaOne/WarmiaDuoWebsite/issues"
+  },
+  "homepage": "https://github.com/BigCyjaOne/WarmiaDuoWebsite#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.15"
+  }
+}
