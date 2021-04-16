@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/BigCyjaOne/WarmiaDuoWebsite#readme",
   "devDependencies": {
-    "@babel/core": "^7.13.15"
+    "@babel/core": "^7.13.15",
+    "sass": "^1.32.8"
   }
 }

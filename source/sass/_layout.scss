@@ -1,0 +1,38 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right top,
+      rgba($color-primary, 0.8),
+      rgba($color-accent, 0.8)
+    ),
+    url(../img/header-photo.jpg);
+  background-size: cover;
+  background-position: top;
+
+  &__container-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    p {
+      color: $color-primary-text;
+      align-self: flex-start;
+      font-size: 1rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__container-btn {
+    margin-top: 1rem;
+  }
+
+  .heading-primary {
+    font-weight: 400;
+    font-size: 2.8rem;
+    color: $color-primary-text;
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,12 @@
+.btn {
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+  background: linear-gradient(
+    to right top,
+    rgba($color-accent, 1),
+    rgba($color-accent, 1)
+  );
+  border: none;
+  outline: none;
+  box-shadow: $box-sha-3;
+}
