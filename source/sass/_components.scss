@@ -1,12 +1,25 @@
 .btn {
   font-family: "Roboto", sans-serif;
-  padding: 1rem;
-  background: linear-gradient(
-    to right top,
-    rgba($color-accent, 1),
-    rgba($color-accent, 1)
-  );
+  color: $color-grey-light-4;
+  padding: 0.75rem 2rem;
+  // background: linear-gradient(
+  //   to right top,
+  //   rgba($color-accent, 0.9),
+  //   rgba($color-primary-dark, 1)
+  // );
+  font-size: 1.1rem;
+  background-color: $color-grey-light-3;
   border: none;
   outline: none;
   box-shadow: $box-sha-3;
+  border-radius: 10rem;
+  text-transform: uppercase;
+
+  &:hover {
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: $box-sha-2;
+  }
 }

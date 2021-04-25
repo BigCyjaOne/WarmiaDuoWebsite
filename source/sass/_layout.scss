@@ -2,10 +2,11 @@
   height: 100vh;
   background-image: linear-gradient(
       to right top,
-      rgba($color-primary, 0.8),
-      rgba($color-accent, 0.8)
+      rgba($color-primary-dark, 0.75),
+      rgba($color-primary-light, 0.3)
     ),
-    url(../img/header-photo.jpg);
+    url(../img/header-photo-phone.jpg);
+
   background-size: cover;
   background-position: top;
 
@@ -18,10 +19,16 @@
     padding: 2rem;
 
     p {
-      color: $color-primary-text;
       align-self: flex-start;
+      font-weight: 300;
+      font-style: italic;
       font-size: 1rem;
+      margin-top: 0.3rem;
+      margin-left: 1.2rem;
       margin-bottom: 4rem;
+      letter-spacing: 0.5px;
+      color: $color-grey-light-3;
+      // color: transparent;
     }
   }
 
@@ -30,9 +37,9 @@
   }
 
   .heading-primary {
-    font-weight: 400;
-    font-size: 2.8rem;
-    color: $color-primary-text;
     align-self: flex-start;
+    font-size: 3.4rem;
+    font-weight: 100;
+    color: $color-grey-light-3;
   }
 }
