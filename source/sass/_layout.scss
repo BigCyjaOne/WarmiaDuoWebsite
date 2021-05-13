@@ -35,11 +35,35 @@
   &__container-btn {
     margin-top: 1rem;
   }
+}
 
-  .heading-primary {
-    align-self: flex-start;
-    font-size: 3.4rem;
-    font-weight: 100;
-    color: $color-grey-light-3;
+.bio {
+  &__container {
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  &__fig {
+    position: relative;
+    height: 300px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__heading {
+    margin-top: -3rem;
+    z-index: 1;
+  }
+
+  &__description {
+    width: 100%;
+    padding-top: 1rem;
   }
 }
