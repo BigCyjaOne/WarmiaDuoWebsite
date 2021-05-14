@@ -38,23 +38,49 @@
 }
 
 .bio {
+  background-color: $color-grey-light-2;
   &__container {
+    padding: 0 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
   }
   &__card {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding-bottom: 1.6rem;
+    border-radius: 5px;
+    box-shadow: $box-sha-2;
+    background-color: $color-white;
+    overflow: hidden;
   }
 
   &__fig {
     position: relative;
-    height: 300px;
 
     img {
-      height: 100%;
+      display: block;
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
     }
+  }
+
+  &__fig::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to right top,
+      rgba($color-primary-dark, 0.6),
+      rgba($color-primary-light, 0.1)
+    );
   }
 
   &__heading {
@@ -64,6 +90,13 @@
 
   &__description {
     width: 100%;
-    padding-top: 1rem;
+    padding: 1rem 1rem 0 1rem;
+
+    p {
+      font-size: 1.1rem;
+      color: $color-secondary-text;
+      text-align: center;
+      letter-spacing: 0.7px;
+    }
   }
 }
