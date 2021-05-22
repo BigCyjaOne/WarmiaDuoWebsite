@@ -42,7 +42,12 @@
 }
 
 .bio {
-  background-color: $color-grey-light-2;
+  background-image: linear-gradient(
+    to right top,
+    rgba($color-primary-dark, 0.9),
+    rgba($color-accent, 0.7)
+  );
+  padding-bottom: 2rem;
 
   &__container {
     padding: 0 1rem;
@@ -107,13 +112,39 @@
 }
 
 .gallery {
-  background-color: $color-grey-light-3;
-  padding-bottom: 10rem;
+  background-image: linear-gradient(
+    to right top,
+    rgba($color-primary-dark, 0.9),
+    rgba($color-accent, 0.7)
+  );
+  padding-bottom: 3rem;
 
   .swiper-container {
     height: auto;
   }
 
   .swiper-slide {
+  }
+}
+
+.repertoire {
+  padding-bottom: 2rem;
+  background-image: linear-gradient(
+      to right top,
+      rgba($color-white, 0.9),
+      rgba($color-white, 0.7)
+    ),
+    url(../img/background-image-1.jpg);
+  background-size: cover;
+  &__list {
+    padding-top: 1rem;
+  }
+
+  &__item {
+    color: $color-secondary-text;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.15rem;
   }
 }
