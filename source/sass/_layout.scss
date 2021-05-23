@@ -157,6 +157,46 @@
     ),
     url(../img/background-image-2.jpg);
   background-size: cover;
-  width: 100%;
-  height: auto;
+  background-position: center;
+  padding: 10rem 0;
+
+  &__box {
+    display: block;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 100%
+    );
+    margin: 0 2rem;
+    padding: 0 3rem;
+    border-radius: 5px;
+  }
+}
+
+.form {
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    font-size: 1rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    border: 3px solid transparent;
+    display: block;
+
+    &-message {
+      height: 6rem;
+    }
+  }
+
+  &__label {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+  }
 }
