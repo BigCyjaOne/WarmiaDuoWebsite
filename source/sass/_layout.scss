@@ -179,10 +179,11 @@
   }
 
   &__input {
+    width: 100%;
     font-size: 1rem;
     font-family: inherit;
     color: inherit;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 2px;
     border: 3px solid transparent;
     display: block;
