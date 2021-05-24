@@ -152,8 +152,8 @@
 .newsletter {
   background-image: linear-gradient(
       to right top,
-      rgba($color-white, 0.3),
-      rgba($color-white, 0.3)
+      rgba($color-white, 0.2),
+      rgba($color-white, 0.2)
     ),
     url(../img/background-image-2.jpg);
   background-size: cover;
@@ -164,8 +164,8 @@
     display: block;
     background-image: linear-gradient(
       to right,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.9) 100%
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.8) 100%
     );
     margin: 0 2rem;
     padding: 0 3rem;
