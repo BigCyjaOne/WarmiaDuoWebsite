@@ -23,3 +23,20 @@
     box-shadow: $box-sha-2;
   }
 }
+
+.polaroid-item {
+  padding: 0 1rem 1rem 1rem;
+
+  .polaroid-fig {
+    padding: 1.5rem;
+    padding-bottom: 3.5rem;
+    box-shadow: $box-sha-2;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}

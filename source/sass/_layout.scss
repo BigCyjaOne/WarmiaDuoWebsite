@@ -18,6 +18,10 @@
     justify-content: center;
     padding: 2rem;
 
+    h1 {
+      align-self: flex-start;
+    }
+
     p {
       align-self: flex-start;
       font-weight: 300;
@@ -38,7 +42,13 @@
 }
 
 .bio {
-  background-color: $color-grey-light-2;
+  background-image: linear-gradient(
+    to right top,
+    rgba($color-primary-dark, 0.9),
+    rgba($color-accent, 0.7)
+  );
+  padding-bottom: 2rem;
+
   &__container {
     padding: 0 1rem;
 
@@ -99,5 +109,96 @@
       text-align: center;
       letter-spacing: 0.7px;
     }
+  }
+}
+
+.gallery {
+  background-image: linear-gradient(
+    to right top,
+    rgba($color-primary-dark, 0.9),
+    rgba($color-accent, 0.7)
+  );
+  padding-bottom: 3rem;
+
+  .swiper-container {
+    height: auto;
+  }
+
+  .swiper-slide {
+  }
+}
+
+.repertoire {
+  padding-bottom: 2rem;
+  background-image: linear-gradient(
+      to right top,
+      rgba($color-white, 0.9),
+      rgba($color-white, 0.7)
+    ),
+    url(../img/background-image-1.jpg);
+  background-size: cover;
+  &__list {
+    padding-top: 1rem;
+  }
+
+  &__item {
+    color: $color-secondary-text;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.15rem;
+  }
+}
+
+.newsletter {
+  background-image: linear-gradient(
+      to right top,
+      rgba($color-white, 0.3),
+      rgba($color-white, 0.3)
+    ),
+    url(../img/background-image-2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
+
+  &__box {
+    display: block;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    margin: 0 2rem;
+    padding: 0 3rem;
+    border-radius: 5px;
+  }
+}
+
+.form {
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 1rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1rem 1rem;
+    border-radius: 2px;
+    border: 3px solid transparent;
+    display: block;
+
+    &-message {
+      height: 6rem;
+    }
+  }
+
+  &__label {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
   }
 }

@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="source/sass/main.scss" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">
-    <title>WarmiaDuo</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">
+<!-- 
+    <link rel="stylesheet" href="source/vendors/animated-event-calendar/animated-event-calendar/src/simple-calendar.scss">    
+    <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" /> -->
+    
+    
+  <title>WarmiaDuo</title>
   </head>
   <body>
     <header class="header">
@@ -22,26 +25,27 @@
 
     <main>
       <section class="bio">
-        <div class="">
-          <h2 class="heading-secondary"></h2>
+        <div class="title">
+          <h2 class="heading-secondary heading-secondary-2">O zespole</h2>
         </div>
-
-     
 
          <div class="bio__container">
           <div class="bio__card">
             <figure class="bio__fig">
-              <img src="" alt="">
+              <img src="/source/img/bio-duo-1.jpg" alt="">
             </figure>
             <h3 class="heading-tertiary"></h3>
-            <div class="bio__description"></div>
+            <div class="bio__description">
+              <p>Varmia Duo powstało z myślą o wzbogaceniu wyjątkowych chwil profesjonalną oprawą muzyczną. Duet Skrzypce-Kontrabas tworzą artystki Filharmonii Warmińsko-Mazurskiej. W repertuarze znajdą Państwo najpiękniejsze dzieła zarówno muzyki klasycznej jak i rozrywkowej.
+              Istnieje możliwość rozbudowania składu o dodatkowe instrumenty oraz śpiew.</p>
+            </div>
           </div>
         </div>
 
         <div class="bio__container">
           <div class="bio__card">
             <figure class="bio__fig">
-              <img src="source/img/bio-gustaw-4.jpg" alt="Violinist">
+              <img src="source/img/bio-gustaw-1.jpg" alt="Violinist">
             </figure>
             <div class="bio__heading">
               <h3 class="heading-tertiary">Karolina Gustaw</h3>
@@ -71,10 +75,109 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="repertoire">
+        <div class="title">
+          <h2 class="heading-secondary heading-secondary-1">Repertuar</h2>
+        </div>
+        
+        <ul class="repertoire__list">
+          <li class="repertoire__item">“Kanon” – Pachelbel</li>
+          <li class="repertoire__item">“Wedding March" - R. Wagner</li>
+          <li class="repertoire__item">“Aria na strunie G” – J. S. Bach</li>
+          <li class="repertoire__item">“Ave Verum” – W.A. Mozart</li>
+          <li class="repertoire__item">“La Califfa"</li>
+          <li class="repertoire__item">“Marsz weselny" - F. Mendelssohn-Barholdy</li>
+          <li class="repertoire__item">“Modlitwa o pokój” – N. Blacha</li>
+          <li class="repertoire__item">“Panis Angelicus” – C. Franck</li>
+          <li class="repertoire__item">“El Oboe de Gabriel” – Morricone</li>
+          <li class="repertoire__item">“Ave Maria" - J.S.Bach / Ch.Gounod</li>
+          <li class="repertoire__item">“Ave Maria” – F. Schubert</li>
+          <li class="repertoire__item">“Cantabile" - G. Tartini</li>
+          <li class="repertoire__item">“Largo" - G.F. Haendel</li>
+          <li class="repertoire__item">“Marzenie" - R. Schumann</li>
+        </ul>
       
       </section>
+
+      <section class="gallery">
+        <div class="title">
+          <h2 class="heading-secondary heading-secondary-2">Galeria</h2>
+        </div>
+
+        <div class="swiper-container">
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide polaroid-item">
+              <figure class="polaroid-fig">
+                <img src="/source/img/gallery-1.jpg" alt="gallery photo">
+              </figure>
+            </div>
+            <div class="swiper-slide polaroid-item"> 
+              <figure class="polaroid-fig">
+                <img src="/source/img/gallery-2.jpg" alt="gallery photo">
+              </figure></div>
+            <div class="swiper-slide polaroid-item">
+              <figure class="polaroid-fig">
+                <img src="/source/img/gallery-3.jpg" alt="gallery photo">
+              </figure>
+            </div>
+            <div class="swiper-slide polaroid-item">
+              <figure class="polaroid-fig">
+                <img src="/source/img/gallery-4.jpg" alt="gallery photo">
+              </figure>
+            </div>
+            <div class="swiper-slide polaroid-item"> <figure class="polaroid-fig">
+              <img src="/source/img/gallery-5.jpg" alt="gallery photo">
+            </figure>
+          </div>
+        </div>
+
+          <div class="swiper-pagination"></div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        
+        </div>
+      </section>
+      
+      <section class="newsletter">
+        <div class="newsletter__box">
+          <div class="newsletter__form">
+            <form action="#" class="form">
+              <div class="form__group">
+                <h2 class="heading-secondary">Skontaktuj się z nami</h2>
+              </div>
+              <div class="form__group">
+                <input type="text" class="form__input" placeholder="Imię" id="name" required>
+                <label for="name" class="form__label">Imię</label>
+              </div>
+              <div class="form__group">
+                <input type="email" class="form__input" placeholder="email" id="email" required>
+                <label for="email" class="form__label">Email</label>
+              </div>
+              <div class="form__group">
+                <textarea type="text" class="form__input form__input-message" placeholder="Twoja wiadomość" id="message" required></textarea> 
+                <label for="message" class="form__label">Twoja wiadomość</label>
+              </div>
+              <div class="form__group">
+                <button href="#" class="btn btn--primary">Wyślij</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
     </main>
 
+  
+    
+  <!-- <script src="source/vendors/animated-event-calendar/animated-event-calendar/dist/jquery.simple-calendar.min.js"></script>
+  <script src="/source/vendors/animated-event-calendar/animated-event-calendar/src/jquery.simple-calendar.js"></script>
 
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+
+  <script src="/source/js/index.js"></script>
   </body>
 </html>
