@@ -9,12 +9,13 @@
   // text-transform: uppercase;
   font-weight: 300;
   text-align: center;
+  color: $color-secondary-text;
 
-  &-1 {
+  &--1 {
     color: $color-secondary-text;
   }
 
-  &-2 {
+  &--2 {
     color: $color-grey-light-3;
   }
 }
@@ -42,7 +43,7 @@
       width: 60%;
     }
 
-    &-2::after {
+    &--2::after {
       background: $color-grey-light-1;
     }
   }

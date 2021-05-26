@@ -1,26 +1,62 @@
 .btn {
   font-family: "Roboto", sans-serif;
-  color: $color-grey-light-4;
-  padding: 0.75rem 2rem;
-  // background: linear-gradient(
-  //   to right top,
-  //   rgba($color-accent, 0.9),
-  //   rgba($color-primary-dark, 1)
-  // );
   font-size: 1.1rem;
-  background-color: $color-grey-light-3;
-  border: none;
+  padding: 0.75rem 2rem;
   outline: none;
+  border: none;
   box-shadow: $box-sha-3;
   border-radius: 10rem;
   text-transform: uppercase;
+  // position: relative;
+  // display: inline-block;
 
-  &:hover {
+  // &:link,
+  // &:visited {
+  //   display: inline-block;
+  //   text-decoration: none;
+  //   padding: 3rem;
+  //   transition: all 0.2s;
+  //   position: relative;
+  // }
+
+  // &:hover {
+  //   transform: translateY(-0.3rem);
+  //   box-shadow: $box-sha-2;
+
+  //   &::after {
+  //     transform: scaleX(1.4) scaleY(1.6);
+  //     opacity: 0;
+  //   }
+  // }
+
+  // &:active,
+  // &:focus {
+  //   outline: none;
+  //   transform: translateY(-0.1rem);
+  //   box-shadow: $box-sha-2;
+  // }
+
+  // &::after {
+  //   content: "";
+  //   display: inline-block;
+  //   height: 100%;
+  //   width: 100%;
+  //   border-radius: 10rem;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: -1;
+  //   transition: all 0.4s;
+  // }
+
+  &--primary {
+    background-color: $color-grey-light-3;
+    color: $color-grey-light-4;
   }
 
-  &:active {
-    transform: translateY(-1px);
-    box-shadow: $box-sha-2;
+  &--secondary {
+    background-color: $color-accent-dark;
+    color: $color-grey-light-5;
   }
 }
 

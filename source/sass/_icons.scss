@@ -1,0 +1,21 @@
+.icon {
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+
+  &--music::after {
+    content: "\e911";
+  }
+  &--fire::after {
+    content: "\e9a9";
+  }
+  &--star-full::after {
+    content: "\e9d9";
+  }
+  &--facebook::after {
+    content: "\ea91";
+  }
+  &--instagram::after {
+    content: "\e92";
+  }
+}
