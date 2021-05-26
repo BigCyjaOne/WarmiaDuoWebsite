@@ -1,62 +1,72 @@
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(0.3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .btn {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
-  padding: 0.75rem 2rem;
-  outline: none;
-  border: none;
-  box-shadow: $box-sha-3;
-  border-radius: 10rem;
-  text-transform: uppercase;
-  // position: relative;
-  // display: inline-block;
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 10rem;
+    box-shadow: $box-sha-3;
+    transition: all 0.2s;
+    position: relative;
+  }
 
-  // &:link,
-  // &:visited {
-  //   display: inline-block;
-  //   text-decoration: none;
-  //   padding: 3rem;
-  //   transition: all 0.2s;
-  //   position: relative;
-  // }
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: $box-sha-2;
 
-  // &:hover {
-  //   transform: translateY(-0.3rem);
-  //   box-shadow: $box-sha-2;
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
 
-  //   &::after {
-  //     transform: scaleX(1.4) scaleY(1.6);
-  //     opacity: 0;
-  //   }
-  // }
-
-  // &:active,
-  // &:focus {
-  //   outline: none;
-  //   transform: translateY(-0.1rem);
-  //   box-shadow: $box-sha-2;
-  // }
-
-  // &::after {
-  //   content: "";
-  //   display: inline-block;
-  //   height: 100%;
-  //   width: 100%;
-  //   border-radius: 10rem;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: -1;
-  //   transition: all 0.4s;
-  // }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: $box-sha-3;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
 
   &--primary {
     background-color: $color-grey-light-3;
     color: $color-grey-light-4;
+
+    &::after {
+      background-color: $color-grey-light-3;
+    }
   }
 
   &--secondary {
     background-color: $color-accent-dark;
     color: $color-grey-light-5;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
   }
 }
 
