@@ -284,3 +284,45 @@
     color: $color-primary-text;
   }
 }
+
+.footer {
+  background-color: $color-grey-dark-1;
+
+  &__title {
+    padding: 1rem 0;
+    &--name {
+      font-family: Allura;
+      color: $color-primary;
+      font-size: 3.5rem;
+      text-align: center;
+    }
+  }
+
+  &__social {
+    list-style: none;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid $color-primary;
+    padding: 2rem;
+    margin: 0 3rem;
+    li {
+      display: inline-block;
+      padding: 0 2rem;
+      a {
+        color: $color-primary;
+      }
+    }
+  }
+
+  p {
+    color: $color-primary;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-top: 1px solid $color-primary;
+    padding: 2rem 0rem;
+    margin: 0 3rem;
+  }
+}
