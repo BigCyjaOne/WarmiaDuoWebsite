@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <!-- 
     <link rel="stylesheet" href="source/vendors/animated-event-calendar/animated-event-calendar/src/simple-calendar.scss">    
     <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" /> -->
@@ -18,20 +18,41 @@
   <title>WarmiaDuo</title>
   </head>
   <body>
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#features" class="navigation__link">Co nas wyróżnia?</a></li>
+          <li class="navigation__item"><a href="#bio" class="navigation__link">O nas</a></li>
+          <li class="navigation__item"><a href="#repertoire" class="navigation__link">Repertuar</a></li>
+          <li class="navigation__item"><a href="#gallery" class="navigation__link">Galeria</a></li>
+          <li class="navigation__item"><a href="#newsletter" class="navigation__link">Zarezerwuj termin</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__container-text">
-        <h1 class="heading-primary">Warmia Duo</h1>
+        <h1 class="heading-primary">Varmia Duo</h1>
         <p>MUZYKA PASJA DOŚWIADCZENIE</p>
-        <a href="#" class="btn btn--primary btn--animated">About us</a>  
+        <a href="#bio" class="btn btn--primary btn--animated">O nas</a>  
     </header>
 
     <main>
-      <section class="features">
+      <section class="features" id="features">
         <div class="features__container">
           <div class="features__box">
             <i class="icon icon--music"></i>
             <h3 class="heading-tertiary">Muzyka</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sequi, quae commodi eum blanditiis eius tempore architecto, quaerat libero dolorum, dolorem numquam! Ab, illum. Consequatur incidunt itaque earum quaerat deserunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sequi, quae commodi eum blanditiis eius tempore architecto, quaerat libero dolorum, dolorem numquam! Ab, illum. Consequatur incidunt itaque earum quaerat deserunt <a href="#repertoire" class="features__link">repertuar</a></p>
           </div> 
         </div>
 
@@ -53,7 +74,7 @@
       </section>
 
 
-      <section class="bio">
+      <section class="bio" id="bio">
         <div class="title">
           <h2 class="heading-secondary heading-secondary--2">O zespole</h2>
         </div>
@@ -61,7 +82,7 @@
          <div class="bio__container">
           <div class="bio__card">
             <figure class="bio__fig">
-              <img src="/source/img/bio-duo-1.jpg" alt="">
+              <img src="/source/img/bio-duo-1.jpg" alt="Varmia Duo Photo">
             </figure>
             <h3 class="heading-tertiary"></h3>
             <div class="bio__description">
@@ -106,7 +127,7 @@
         </div>
       </section>
 
-      <section class="repertoire">
+      <section class="repertoire" id="repertoire">
         <div class="title">
           <h2 class="heading-secondary heading-secondary-1">Repertuar</h2>
         </div>
@@ -184,7 +205,7 @@
       
       </section>
 
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="title">
           <h2 class="heading-secondary heading-secondary--2">Galeria</h2>
         </div>
@@ -225,7 +246,7 @@
         </div>
       </section>
       
-      <section class="newsletter">
+      <section class="newsletter" id="#newsletter">
         <div class="newsletter__box">
           <div class="newsletter__form">
             <form action="#" class="form">
