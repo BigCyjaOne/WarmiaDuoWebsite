@@ -14,13 +14,14 @@
   &:link,
   &:visited {
     display: inline-block;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-decoration: none;
     padding: 0.75rem 2rem;
     border-radius: 10rem;
     box-shadow: $box-sha-3;
     transition: all 0.2s;
     position: relative;
+    font-size: 1.2rem;
   }
 
   &:hover {
@@ -52,7 +53,7 @@
 
   &--primary {
     background-color: $color-grey-light-3;
-    color: $color-grey-light-4;
+    color: $color-accent;
 
     &::after {
       background-color: $color-grey-light-3;
@@ -85,4 +86,17 @@
     height: auto;
     width: 100%;
   }
+}
+
+.btn--ghost:link,
+.btn--ghost:visited {
+  border: 2px solid $color-grey-light-4;
+  color: $color-grey-light-4;
+}
+
+.btn--ghost:hover,
+.btn--ghost:active {
+  background-color: $color-grey-light-4;
+  border: 2px solid $color-grey-light-4;
+  color: $color-grey-light-3;
 }
