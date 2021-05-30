@@ -51,6 +51,8 @@
   padding-bottom: 2rem;
 
   &__container {
+    display: flex;
+    justify-content: center;
     padding: 0 1rem;
 
     &:not(:last-child) {
@@ -59,6 +61,7 @@
   }
   &__card {
     display: flex;
+    max-width: 300px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -75,8 +78,14 @@
     img {
       display: block;
       width: 100%;
-      height: 350px;
+      height: 385px;
       object-fit: cover;
+    }
+
+    &--1 {
+      img {
+        object-position: bottom;
+      }
     }
   }
 
@@ -284,6 +293,12 @@
     letter-spacing: 1px;
     color: $color-primary-text;
   }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+  }
 }
 
 .footer {
@@ -374,19 +389,19 @@
 
   &__nav {
     height: 100vh;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1500;
     opacity: 0;
-    // width: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 
   &__list {
+    width: 100%;
     list-style: none;
     text-align: center;
-    width: 100%;
     margin-top: 15rem;
   }
 
