@@ -43,3 +43,17 @@ const swiper = new Swiper(".swiper-container", {
 // $(function () {
 //   $("#container").simpleCalendar();
 // });
+const btnNav = document.querySelector(".navigation__button");
+const navNav = document.querySelector(".navigation__nav");
+const navList = document.querySelector(".navigation__list");
+const navItem = document.querySelector(".navigation__item");
+
+btnNav.addEventListener("click", function () {
+  if ((navNav.style.display = "none")) {
+    navNav.style.display = "block";
+    // navList.style.display = "block";
+  } else if ((navNav.style.display = "block")) {
+    navNav.style.display = "none";
+    // navList.style.display = "none";
+  }
+});
