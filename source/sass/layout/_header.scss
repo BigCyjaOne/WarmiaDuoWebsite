@@ -1,0 +1,43 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right top,
+      rgba($color-primary-dark, 0.75),
+      rgba($color-primary-light, 0.3)
+    ),
+    url(../img/header-photo-phone.jpg);
+
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+
+  &__container-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    h1 {
+      align-self: flex-start;
+    }
+
+    p {
+      align-self: flex-start;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 1rem;
+      margin-top: 0.3rem;
+      margin-left: 1.2rem;
+      margin-bottom: 4rem;
+      letter-spacing: 0.5px;
+      color: $color-grey-light-3;
+      // color: transparent;
+    }
+  }
+
+  &__container-btn {
+    margin-top: 1rem;
+  }
+}

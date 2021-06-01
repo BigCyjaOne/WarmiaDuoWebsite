@@ -1,0 +1,89 @@
+.newsletter {
+  background-color: $color-grey-light-3;
+
+  padding: 10rem 0;
+
+  &__box {
+    display: block;
+    background-image: linear-gradient(
+        to right top,
+        rgba($color-white, 0.8),
+        rgba($color-white, 0.8)
+      ),
+      url(../img/background-image-2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    background-color: #fff;
+    margin: 0 2rem;
+    padding: 0 2rem;
+    border-radius: 5px;
+  }
+}
+
+.form {
+  &__heading {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__group {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &:last-child {
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 1rem 1rem;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+    transition: border 0.3s;
+    // min-width: 220px;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border-bottom: 3px solid green;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid orange;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-secondary-text;
+    }
+
+    &-message {
+      border: none;
+      height: 6rem;
+    }
+  }
+
+  &__label {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    color: $color-secondary-text;
+  }
+
+  &__input:placeholder-shown ~ &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}

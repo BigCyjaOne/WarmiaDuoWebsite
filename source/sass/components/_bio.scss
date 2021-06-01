@@ -1,0 +1,78 @@
+.bio {
+  background-image: linear-gradient(
+    to right top,
+    rgba($color-primary-dark, 0.9),
+    rgba($color-accent, 0.7)
+  );
+  padding-bottom: 2rem;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__card {
+    display: flex;
+    max-width: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1.6rem;
+    border-radius: 5px;
+    box-shadow: $box-sha-2;
+    background-color: $color-white;
+    overflow: hidden;
+  }
+
+  &__fig {
+    position: relative;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 385px;
+      object-fit: cover;
+    }
+
+    &--1 {
+      img {
+        object-position: bottom;
+      }
+    }
+  }
+
+  &__fig::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to right top,
+      rgba($color-primary-dark, 0.6),
+      rgba($color-primary-light, 0.1)
+    );
+  }
+
+  &__heading {
+    margin-top: -3rem;
+    z-index: 1;
+  }
+
+  &__description {
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+
+    p {
+      font-size: 1.4rem;
+      color: $color-secondary-text;
+      text-align: center;
+      letter-spacing: 0.7px;
+    }
+  }
+}

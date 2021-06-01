@@ -1,0 +1,50 @@
+.footer {
+  background-color: $color-grey-dark-1;
+  padding: 1rem 0 0;
+
+  &__title {
+    padding: 1rem 0;
+    &--name {
+      font-family: Great Vibes;
+      color: $color-primary;
+      font-size: 3.5rem;
+      text-align: center;
+    }
+  }
+
+  &__social {
+    list-style: none;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid $color-primary;
+    padding: 2rem;
+    margin: 0 2rem;
+    li {
+      display: inline-block;
+      padding: 0 2rem;
+      a {
+        color: $color-primary;
+        text-decoration: none;
+      }
+      .icon--facebook:hover {
+        color: #1877f2;
+      }
+      .icon--instagram:hover {
+        color: #c32aa3;
+      }
+    }
+  }
+
+  p {
+    color: $color-primary;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+    border-top: 1px solid $color-primary;
+    padding: 2rem 0rem;
+    margin: 0 2rem;
+  }
+}
