@@ -10,6 +10,7 @@
     transition: all 0.2s;
     position: relative;
     font-size: 1.2rem;
+    z-index: -1;
   }
 
   &:hover {
@@ -40,8 +41,7 @@
   }
 
   &--primary {
-    background-color: $color-grey-light-3;
-    color: $color-accent;
+    background-color: transparents;
 
     &::after {
       background-color: $color-grey-light-3;
@@ -73,13 +73,13 @@
 
 .btn--ghost:link,
 .btn--ghost:visited {
-  border: 2px solid $color-grey-light-4;
-  color: $color-grey-light-4;
+  border: 2px solid $color-grey-light-5;
+  color: $color-grey-light-5;
 }
 
 .btn--ghost:hover,
 .btn--ghost:active {
-  background-color: $color-grey-light-4;
+  // background-color: $color-grey-light-5;
   border: 2px solid $color-grey-light-4;
-  color: $color-grey-light-3;
+  background: rgba(121, 85, 72, 0.5);
 }
