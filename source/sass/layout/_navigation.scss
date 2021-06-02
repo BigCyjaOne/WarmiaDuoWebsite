@@ -198,10 +198,15 @@ nav {
     text-decoration: none;
     font-size: 2.5rem;
     color: $color-primary-light;
-    margin-bottom: 1.5rem;
-  }
+    transition: transform 4s;
 
-  li + li {
-    margin-top: 1em;
+    &:hover,
+    &:active {
+      background-position: 100%;
+      background-color: $color-primary-light;
+      color: $color-accent;
+      transform: translateX(2rem);
+      padding: 1rem;
+    }
   }
 }
