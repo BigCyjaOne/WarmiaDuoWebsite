@@ -55,12 +55,14 @@ const swiper = new Swiper(".swiper-container", {
 // navItem.addEventListener("click", function () {});
 
 const btn = document.querySelector(".navigation__nav");
-const bgc = document.querySelector(".navigation__background");
+const bgc = document.querySelector(".background");
+const menu = document.querySelector(".menu");
 
 btn.addEventListener("click", function () {
-  bgc.style.width = "900px";
   bgc.classList.toggle("active__bgc");
   bgc.classList.toggle("not-active__bgc");
   btn.classList.toggle("active");
   btn.classList.toggle("not-active");
+  menu.classList.toggle("not-active__menu");
+  menu.classList.toggle("active__menu");
 });

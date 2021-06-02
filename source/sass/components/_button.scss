@@ -10,7 +10,7 @@
     transition: all 0.2s;
     position: relative;
     font-size: 1.2rem;
-    z-index: -1;
+    z-index: 1;
   }
 
   &:hover {
@@ -41,7 +41,7 @@
   }
 
   &--primary {
-    background-color: transparents;
+    background-color: transparent;
 
     &::after {
       background-color: $color-grey-light-3;
