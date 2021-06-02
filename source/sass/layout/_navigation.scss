@@ -176,30 +176,43 @@
 
 nav {
   position: absolute;
-  background-color: $color-accent;
+  // background-color: $color-accent;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.menu {
-  &__list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
+  .menu {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
 
-  &__link {
-    display: inline-block;
-    margin-bottom: 2rem;
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: $color-primary-light;
-  }
+    &__link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      font-size: 2.5rem;
+      color: $color-primary-light;
+      transition: all 0.4s;
+      padding: 1rem;
+      text-align: center;
+      font-weight: 300;
+      z-index: 21;
 
-  li + li {
-    margin-top: 1em;
+      &:hover,
+      &:active {
+        background-position: 100%;
+        background-color: $color-primary-light;
+        color: $color-accent;
+        transform: translateX(1rem);
+      }
+    }
+
+    li + li {
+      margin-top: 1em;
+    }
   }
 }
