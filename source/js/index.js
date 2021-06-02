@@ -59,8 +59,8 @@ const bgc = document.querySelector(".navigation__background");
 
 btn.addEventListener("click", function () {
   bgc.style.width = "900px";
-  // bgc.classList.toggle("active__bgc");
-  // bgc.classList.toggle("not-active__bgc");
+  bgc.classList.toggle("active__bgc");
+  bgc.classList.toggle("not-active__bgc");
   btn.classList.toggle("active");
   btn.classList.toggle("not-active");
 });
