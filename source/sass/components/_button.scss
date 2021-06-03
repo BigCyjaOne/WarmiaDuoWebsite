@@ -72,13 +72,12 @@
 
 .btn--ghost:link,
 .btn--ghost:visited {
-  border: 2px solid $color-grey-light-5;
+  border: 1px solid $color-grey-light-5;
   color: $color-grey-light-5;
 }
 
 .btn--ghost:hover,
 .btn--ghost:active {
-  // background-color: $color-grey-light-5;
-  border: 2px solid $color-grey-light-4;
+  border: 1px solid $color-grey-light-4;
   background: rgba(121, 85, 72, 0.5);
 }
