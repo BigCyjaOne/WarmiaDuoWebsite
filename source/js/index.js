@@ -19,8 +19,8 @@ const swiper = new Swiper(".swiper-container", {
 });
 
 const btn = document.querySelector(".navigation__nav");
-const bgc = document.querySelector(".navigation__background");
-const menu = document.querySelector(".navigation__menu");
+const bgc = document.querySelector(".background");
+const menu = document.querySelector(".menu");
 
 btn.addEventListener("click", function () {
   bgc.classList.toggle("active__bgc");

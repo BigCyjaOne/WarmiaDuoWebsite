@@ -1,0 +1,33 @@
+.repertoire {
+  padding-bottom: 2rem;
+  background-image: linear-gradient(
+      to right top,
+      rgba($color-white, 0.9),
+      rgba($color-white, 0.7)
+    ),
+    url(../img/background-image-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+  &__category {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $color-black;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  &__list {
+    padding: 1rem 0;
+  }
+
+  &__item {
+    color: $color-secondary-text;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.2rem 2rem;
+  }
+}
