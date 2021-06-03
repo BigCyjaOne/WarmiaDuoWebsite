@@ -197,6 +197,11 @@
   }
 }
 
+.active__menu {
+  opacity: 1;
+  width: 100%;
+}
+
 .background {
   background-color: $color-accent;
   width: 5rem;
@@ -214,9 +219,4 @@
 
 .not-active__bgc {
   transition: all 0.8s;
-}
-
-.active__menu {
-  opacity: 1;
-  width: 100%;
 }
