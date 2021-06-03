@@ -1,25 +1,3 @@
-// import Swiper from "swiper";
-// // import Swiper, { Navigation, Pagination } from "swiper";
-// import "swiper/swiper-bundle.css";
-// import "regenerator-runtime/runtime";
-// SwiperCore.use([Navigation, Pagination]);
-
-// import SwiperCore, { Navigation, Pagination } from "swiper/core";
-
-// const swiper = new Swiper(".swiper-container", {
-//   spaceBetween: 40,
-//   slidesPerView: 1,
-
-//   pagination: {
-//     el: ".swiper-pagination",
-//   },
-
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
 import "regenerator-runtime/runtime";
@@ -40,23 +18,9 @@ const swiper = new Swiper(".swiper-container", {
   },
 });
 
-// $(function () {
-//   $("#container").simpleCalendar();
-// });
-// const btnNav = document.querySelector(".navigation__button");
-// const navNav = document.querySelector(".navigation__nav");
-// const navList = document.querySelector(".navigation__list");
-// const navItem = document.querySelector(".navigation__item");
-
-// btnNav.addEventListener("click", function () {
-//   navList.classList.toggle("active");
-// });
-
-// navItem.addEventListener("click", function () {});
-
 const btn = document.querySelector(".navigation__nav");
-const bgc = document.querySelector(".background");
-const menu = document.querySelector(".menu");
+const bgc = document.querySelector(".navigation__background");
+const menu = document.querySelector(".navigation__menu");
 
 btn.addEventListener("click", function () {
   bgc.classList.toggle("active__bgc");
