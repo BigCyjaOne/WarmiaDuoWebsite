@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "animated-scroll-to": "^2.2.0",
     "jquery": "^3.6.0",
     "regenerator-runtime": "^0.13.7",
     "swiper": "^6.6.2"
