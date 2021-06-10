@@ -31,12 +31,6 @@ btn.addEventListener("click", function () {
   menu.classList.toggle("not-active__menu");
   menu.classList.toggle("active__menu");
 });
-const menuLink = document.querySelector(".menu__link");
-const link = document.querySelector("#link--1");
-const link2 = document.querySelector("#link--2");
-const link3 = document.querySelector(".link--3");
-const link4 = document.querySelector(".link--4");
-const link5 = document.querySelector(".link--5");
 
 const defaultOptions = {
   // Indicated if scroll animation should be canceled on user action (scroll/keypress/touch)
@@ -68,10 +62,16 @@ const defaultOptions = {
   verticalOffset: 0,
 };
 
-menuLink.addEventListener("click", function () {
-  if (link1) {
-    animateScrollTo(document.querySelector(".features"));
-  } else if (link2) {
-    animateScrollTo(document.querySelector(".bio"));
-  }
+let naviList = document.querySelectorAll(".menu__link");
+
+naviList.forEach((link, i) => {
+  link.addEventListener("click", function () {
+    animateScrollTo(document.querySelector(`#t--${i + 1}`));
+    // btn.classList.remove("active");
+    // btn.classList.add("not-active");
+    // bgc.classList.remove("active__bgc");
+    // bgc.classList.add("not-active__bgc");
+    // menu.classList.remove("active__bgc");
+    // menu.classList.add("not-active__menu");
+  });
 });
