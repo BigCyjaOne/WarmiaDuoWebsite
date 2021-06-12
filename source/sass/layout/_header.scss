@@ -41,3 +41,9 @@
     margin-top: 1rem;
   }
 }
+
+@include media-query($breakpoint-xs) {
+  .header {
+    background-position: center;
+  }
+}

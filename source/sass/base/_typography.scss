@@ -6,7 +6,7 @@
 }
 
 .heading-secondary {
-  font-size: 2.6rem;
+  font-size: 3rem;
   // text-transform: uppercase;
   font-weight: 300;
   text-align: center;
@@ -29,8 +29,18 @@
 
 .title {
   position: relative;
-
+  margin-bottom: -2rem;
   padding: 2rem 0 1rem;
+
+  &__border {
+    display: inline-block;
+    position: absolute;
+    padding: 0 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2rem;
+  }
 
   .heading-secondary {
     position: relative;
@@ -39,9 +49,9 @@
       background: $color-secondary-text;
       position: absolute;
       bottom: 0;
-      left: 20%;
+      left: 0;
       height: 1px;
-      width: 60%;
+      width: 100%;
     }
 
     &--2::after {
