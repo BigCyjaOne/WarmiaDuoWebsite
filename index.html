@@ -251,23 +251,25 @@
       <section class="newsletter" id="t--5" >
         <div class="newsletter__box">
           <div class="newsletter__form">
-            <form action="#" class="form">
+             <form  action="#"  class="form" > 
+              <!-- <input type="hidden" name="_next" value="https://google.com">
+              <input type="hidden" name="_captcha" value="false"> -->
               <div class="form__heading">
                 <h2 class="heading-secondary">Skontaktuj się z nami</h2>
               </div>
               <div class="form__group">
-                <input type="text" class="form__input" placeholder="Imię" id="name" required>
+                <input type="text" name="name" class="form__input" placeholder="Imię" required>
                 <label for="name" class="form__label">Imię</label>
               </div>
               <div class="form__group">
-                <input type="email" class="form__input" placeholder="Email" id="email" required>
+                <input type="email" name="email"class="form__input" placeholder="Email"  required>
                 <label for="email" class="form__label">Email</label>
               </div>
               <div class="form__group">
-                <textarea type="text" class="form__input form__input-message" placeholder="Twoja wiadomość" id="message" required></textarea> 
+                <textarea id="" type="text" name="message" class="form__input form__input-message" placeholder="Twoja wiadomość"  required  ></textarea> 
               </div>
               <div class="form__group">
-                <a href="#" class="btn btn--secondary">Wyślij</a>
+                <button type="submit" class="btn btn--secondary">Wyślij</button>
               </div>
             </form>
           </div>

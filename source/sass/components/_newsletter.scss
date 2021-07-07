@@ -35,6 +35,10 @@
     &:last-child {
       padding-bottom: 2rem;
     }
+
+    textarea {
+      resize: none;
+    }
   }
 
   &__input {
@@ -51,13 +55,13 @@
     // min-width: 220px;
     box-sizing: border-box;
 
-    &:focus {
+    &:not(:last-child):focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
       border-bottom: 3px solid green;
     }
 
-    &:focus:invalid {
+    &:not(:last-child):focus:invalid {
       border-bottom: 3px solid orange;
     }
 
