@@ -1,16 +1,14 @@
 .btn {
-  &:link,
-  &:visited {
-    display: inline-block;
-    // text-transform: uppercase;
-    text-decoration: none;
-    padding: 0.75rem 2rem;
-    border-radius: 10rem;
-    box-shadow: $box-sha-3;
-    transition: all 0.2s;
-    position: relative;
-    font-size: 1.2rem;
-  }
+  display: inline-block;
+  // text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 10rem;
+  box-shadow: $box-sha-3;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.2rem;
+  border: none;
 
   &:hover {
     transform: translateY(-0.3rem);

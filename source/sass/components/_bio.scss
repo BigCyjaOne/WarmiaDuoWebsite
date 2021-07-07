@@ -76,3 +76,19 @@
     }
   }
 }
+
+@include media-query($breakpoint-m) {
+  .bio {
+    &__wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+
+    &__description {
+      display: flex;
+      align-items: center;
+      height: 20rem;
+    }
+  }
+}
