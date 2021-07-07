@@ -61,8 +61,7 @@
 .not-active span:nth-child(3) {
   animation: ease 0.7s bottom-2 forwards;
 }
-.menu,
-.not-active__menu {
+.menu {
   display: flex;
   position: absolute;
   width: 100%;
@@ -71,7 +70,6 @@
   align-items: center;
   z-index: 32;
 
-  opacity: 0;
   transition: all 0.8s;
 
   &__nav {
@@ -114,7 +112,9 @@
     }
   }
 }
-
+.not-active__menu {
+  opacity: 0;
+}
 .active__menu {
   opacity: 1;
   width: 100%;
