@@ -18,6 +18,7 @@
     padding-bottom: 1rem;
   }
   &__list {
+    position: relative;
     padding: 1rem 0;
   }
 
@@ -43,6 +44,29 @@
 
     &__list {
       width: 50%;
+    }
+
+    &__item {
+      text-align: center;
+    }
+  }
+}
+
+@include media-query($breakpoint-m) {
+  .repertoire {
+    &__list {
+      margin-bottom: 2rem;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 17%;
+        width: 66%;
+        height: 100%;
+        background-color: rgba($color-white, 0.4);
+        border-radius: 10px;
+      }
     }
   }
 }
