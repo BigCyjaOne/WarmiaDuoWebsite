@@ -91,3 +91,44 @@
     transform: translateY(-4rem);
   }
 }
+
+@include media-query($breakpoint-tab) {
+  .newsletter {
+    &__box {
+      background-image: linear-gradient(
+          105deg,
+          rgba($color-white, 0.8) 0%,
+          rgba($color-white, 0.8) 50%,
+          transparent 50%
+        ),
+        url(../img/background-image-2.jpg);
+    }
+  }
+
+  .form {
+    &__heading {
+      .heading-secondary {
+        width: 50%;
+      }
+    }
+
+    &__group {
+      width: 42%;
+    }
+  }
+}
+
+@include media-query($breakpoint-m) {
+  .newsletter {
+    padding: 6rem;
+  }
+}
+
+@include media-query($breakpoint-l) {
+  .newsletter {
+    padding: 8rem 18rem;
+
+    &__box {
+    }
+  }
+}

@@ -1,5 +1,9 @@
 .features {
-  background-color: $color-grey-light-3;
+  background-image: linear-gradient(
+    to right top,
+    rgba($color-grey-light-3, 0.8),
+    rgba($color-accent, 0.2)
+  );
   padding: 1.5rem 1rem;
   &__container {
     padding: 1rem;

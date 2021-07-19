@@ -23,14 +23,14 @@ const btn = document.querySelector(".navigation__nav");
 const bgc = document.querySelector(".background");
 const menu = document.querySelector(".menu");
 
-btn.addEventListener("click", function () {
-  bgc.classList.toggle("active__bgc");
-  bgc.classList.toggle("not-active__bgc");
-  btn.classList.toggle("active");
-  btn.classList.toggle("not-active");
-  menu.classList.toggle("not-active__menu");
-  menu.classList.toggle("active__menu");
-});
+// btn.addEventListener("click", function () {
+//   bgc.classList.toggle("active__bgc");
+//   bgc.classList.toggle("not-active__bgc");
+//   btn.classList.toggle("active");
+//   btn.classList.toggle("not-active");
+//   menu.classList.toggle("not-active__menu");
+//   menu.classList.toggle("active__menu");
+// });
 
 const defaultOptions = {
   // Indicated if scroll animation should be canceled on user action (scroll/keypress/touch)
