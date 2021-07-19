@@ -47,3 +47,20 @@
     background-position: center;
   }
 }
+
+@include media-query($breakpoint-m) {
+  .header {
+    background-image: linear-gradient(
+        to right top,
+        rgba($color-primary-dark, 0.75),
+        rgba($color-primary-light, 0.3)
+      ),
+      url(../img/header-photo-desktop-3.jpg);
+    background-position: top;
+    &__container-text {
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+}

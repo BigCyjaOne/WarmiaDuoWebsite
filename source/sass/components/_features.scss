@@ -1,10 +1,12 @@
 .features {
-  background-image: linear-gradient(
-    to right top,
-    rgba($color-grey-light-3, 0.8),
-    rgba($color-accent, 0.2)
-  );
-  padding: 1.5rem 1rem;
+  background-color: $color-grey-light-3;
+  padding: 3.5rem 1rem 5.5rem 1rem;
+
+  &__wrapper {
+    max-width: calc(1440px + 44px);
+    margin: 0 auto;
+  }
+
   &__container {
     padding: 1rem;
   }
@@ -45,7 +47,7 @@
   .features {
     display: flex;
 
-    &__container {
+    &__wrapper {
       display: flex;
       flex-grow: 1;
       width: 33%;
