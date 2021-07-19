@@ -9,7 +9,7 @@
   &__container {
     display: flex;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0 2rem;
 
     &:not(:last-child) {
       margin-bottom: 4rem;
@@ -81,8 +81,14 @@
   .bio {
     &__wrapper {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: flex-start;
+      max-width: calc(1440px + 40px);
+      margin: 0 auto;
+    }
+
+    &__container {
+      padding: 0 2rem;
     }
 
     &__description {

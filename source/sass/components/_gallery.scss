@@ -4,15 +4,21 @@
     rgba($color-primary-dark, 0.9),
     rgba($color-accent, 0.7)
   );
-  padding-bottom: 3rem;
+  padding: 0 2rem 3rem;
+  overflow: hidden;
 
   .swiper-container {
-    height: auto;
+    max-height: 820px;
+
+    max-width: 1440px;
+  }
+  .swiper-wrapper {
+    max-height: 820px;
+  }
+  .swiper-pagination {
+    margin-bottom: 0rem;
   }
 
-  .swiper-pagination {
-    margin-bottom: 1rem;
-  }
   .swiper-pagination-bullet-active {
     background-color: $color-accent;
   }
