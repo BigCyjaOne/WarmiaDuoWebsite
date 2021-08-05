@@ -60,6 +60,7 @@
     align-items: center;
     z-index: 32;
 
+    width: 0;
     opacity: 0;
     transition: opacity 0.8s, width 0.8s;
 
@@ -92,6 +93,7 @@
       text-align: center;
       font-weight: 300;
       z-index: 21;
+      cursor: pointer;
 
       &:not(:last-child) {
         margin-bottom: 1.5rem;
@@ -117,7 +119,6 @@
     border-radius: 50px;
     transition: transform 0.8s;
     z-index: 30;
-    opacity: 0.9;
     transition: all 0.8s;
   }
 
