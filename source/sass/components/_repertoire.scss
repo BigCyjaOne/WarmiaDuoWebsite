@@ -5,17 +5,19 @@
       rgba($color-white, 0.9),
       rgba($color-white, 0.6)
     ),
-    url(../img/background-image-1.jpg);
+    url(../img/background-image-1-mobile.jpg);
   background-size: cover;
   background-attachment: fixed;
 
   &__category {
     font-size: 1.3rem;
     font-weight: 400;
-    color: $color-black;
+    // color: $color-black;
+    color: $color-accent;
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 1rem;
+    font-weight: 600;
   }
   &__list {
     position: relative;
@@ -23,7 +25,7 @@
   }
 
   &__item {
-    color: $color-secondary-text;
+    color: $color-primary-text;
     text-decoration: none;
     list-style: none;
     text-align: left;
@@ -49,6 +51,16 @@
     }
   }
 }
+@include media-query($breakpoint-tab) {
+  .repertoire {
+    background-image: linear-gradient(
+        to right top,
+        rgba($color-white, 0.9),
+        rgba($color-white, 0.6)
+      ),
+      url(../img/background-image-1.jpg);
+  }
+}
 
 @include media-query($breakpoint-l) {
   .repertoire {
@@ -66,17 +78,17 @@
       width: unset;
       // width: 25%;
 
-      &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba($color-primary, 0.4);
-        border-radius: 10px;
-        z-index: 0;
-      }
+      // &::before {
+      //   position: absolute;
+      //   content: "";
+      //   top: 0;
+      //   left: 0;
+      //   width: 100%;
+      //   height: 100%;
+      background-color: rgba($color-primary, 0.4);
+      border-radius: 10px;
+      //   z-index: 0;
+      // }
     }
 
     &__item {
