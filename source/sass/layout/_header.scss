@@ -33,7 +33,6 @@
       margin-bottom: 4rem;
       letter-spacing: 0.5px;
       color: $color-grey-light-3;
-      // color: transparent;
     }
 
     &__socials {
@@ -63,7 +62,7 @@
         rgba($color-primary-dark, 0.75),
         rgba($color-primary-light, 0.3)
       ),
-      url(../img/header-photo-desktop-2.jpg);
+      url(../img/header-photo-desktop.jpg);
     background-position: center;
     &__container-text {
       h1 {

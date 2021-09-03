@@ -32,11 +32,9 @@
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
-
     &:last-child {
       padding-bottom: 2rem;
     }
-
     textarea {
       resize: none;
     }
@@ -53,7 +51,6 @@
     display: inline-block;
     border-bottom: 3px solid transparent;
     transition: border 0.3s;
-    // min-width: 220px;
     box-sizing: border-box;
 
     &:not(:last-child):focus {
@@ -112,7 +109,6 @@
         width: 50%;
       }
     }
-
     &__group {
       width: 42%;
     }
@@ -128,8 +124,5 @@
 @include media-query($breakpoint-xl) {
   .newsletter {
     padding: 8rem 18rem;
-
-    &__box {
-    }
   }
 }
