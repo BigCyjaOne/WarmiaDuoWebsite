@@ -1,13 +1,18 @@
 .polaroid-item.swiper-slide {
+  max-height: 800px;
+
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   .polaroid-fig {
+    max-height: 800px;
+
     position: relative;
     box-shadow: $box-sha-2;
 
     img {
+      max-height: 800px;
       display: block;
       height: 100%;
       width: auto;
