@@ -1,26 +1,19 @@
-.polaroid-item {
+.polaroid-item.swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .polaroid-fig {
     position: relative;
-    max-height: 820px;
     box-shadow: $box-sha-2;
-    // background-color: rgba(255, 255, 255, 0.8);
 
-    &::before {
-      content: "";
+    img {
       display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 33px;
-      background-color: rgba($color-white, 0.75);
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+      max-width: 100%;
+      margin: 0 auto;
     }
-  }
-
-  img {
-    height: auto;
-    width: 100%;
-    object-fit: contain;
-    min-height: 350px;
   }
 }
