@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,13 +13,11 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+
+    <script type="module" async src="/source/js/index.js"></script>
 
     <title>WarmiaDuo</title>
   </head>
@@ -55,12 +53,11 @@
         <a href="#section--1" class="btn btn--animated btn--ghost"
           >Więcej o nas</a
         >
-      
       </div>
     </header>
 
     <main>
-      <section class="features" id="section--1">
+      <section class="section features" id="section--1">
         <div class="features__wrapper">
           <div class="features__container">
             <div class="features__box">
@@ -68,7 +65,7 @@
               <h3 class="heading-tertiary">Muzyka</h3>
               <p>
                 W naszej ofercie znajdą Państwo szeroki wybór repertuaru
-                <a href="#repertoire" class="features__link">(sprawdź)</a> - od
+                <a href="#section--3" class="features__link">(sprawdź)</a> - od
                 muzyki klasycznej przez filmową aż po rozrywkową. Zajmujemy się
                 także aranżacją utworów na życzenie. Dzięki aktywnemu udziałowi
                 w rozmaitych projektach artystycznych nawiązałyśmy współpracę z
@@ -112,7 +109,7 @@
         </div>
       </section>
 
-      <section class="bio" id="section--2">
+      <section class="section bio" id="section--2">
         <div class="title">
           <h2 class="title__border heading-secondary heading-secondary--2">
             O&nbsp;zespole
@@ -127,7 +124,6 @@
                   alt="Varmia Duo Photo"
                 />
               </figure>
-              <h3 class="heading-tertiary"></h3>
               <div class="bio__description">
                 <p>
                   Varmia Duo powstało z myślą o wzbogaceniu wyjątkowych chwil
@@ -188,7 +184,7 @@
         </div>
       </section>
 
-      <section class="repertoire" id="section--3">
+      <section class="section repertoire" id="section--3">
         <div class="title">
           <h2 class="title__border heading-secondary heading-secondary-1">
             Repertuar
@@ -196,7 +192,7 @@
         </div>
         <div class="repertoire__container">
           <ul class="repertoire__list">
-            <div class="repertoire__category">Utwory klasyczne:</div>
+            <li class="repertoire__category">Utwory klasyczne:</li>
             <li class="repertoire__item">1. T. Albinoni - Adagio</li>
             <li class="repertoire__item">2. J.S. Bach - Aria na strunie G</li>
             <li class="repertoire__item">3. J.S. Bach - Arioso</li>
@@ -224,7 +220,7 @@
             <li class="repertoire__item">19. A. Vivaldi - Largo from Winter</li>
           </ul>
           <ul class="repertoire__list">
-            <div class="repertoire__category">Covery:</div>
+            <li class="repertoire__category">Covery:</li>
             <li class="repertoire__item">
               1. A Great Big World - Say Something
             </li>
@@ -262,7 +258,7 @@
             <li class="repertoire__item">23. Queen - We are the Champions</li>
           </ul>
           <ul class="repertoire__list">
-            <div class="repertoire__category">Muzyka filmowa:</div>
+            <li class="repertoire__category">Muzyka filmowa:</li>
             <li class="repertoire__item">
               1. Louis Armstrong - Ain't Misbehavin'
             </li>
@@ -289,7 +285,7 @@
             </li>
           </ul>
           <ul class="repertoire__list">
-            <div class="repertoire__category">Tanga:</div>
+            <li class="repertoire__category">Tanga:</li>
             <li class="repertoire__item">1. I. Albeniz - Tango</li>
             <li class="repertoire__item">2. J. Gardel - Por una Cabeza</li>
             <li class="repertoire__item">3. A. Piazzolla - Libertango</li>
@@ -299,7 +295,7 @@
         </div>
       </section>
 
-      <section class="gallery" id="section--4">
+      <section class="section gallery" id="section--4">
         <div class="title">
           <h2 class="title__border heading-secondary heading-secondary--2">
             Galeria
@@ -429,7 +425,7 @@
         </div>
       </section>
 
-      <section class="newsletter" id="section--5">
+      <section class="section newsletter" id="section--5">
         <div class="newsletter__box">
           <div class="newsletter__form">
             <form
@@ -444,6 +440,7 @@
               </div>
               <div class="form__group">
                 <input
+                  id="name"
                   type="text"
                   name="name"
                   class="form__input"
@@ -454,6 +451,7 @@
               </div>
               <div class="form__group">
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   class="form__input"
@@ -464,8 +462,6 @@
               </div>
               <div class="form__group">
                 <textarea
-                  id=""
-                  type="text"
                   name="message"
                   class="form__input form__input-message"
                   placeholder="Twoja wiadomość"
@@ -480,7 +476,7 @@
         </div>
       </section>
 
-      <section class="footer">
+      <section class="section footer">
         <div class="footer__title">
           <h2 class="footer__title--name">Varmia Duo</h2>
         </div>
@@ -501,7 +497,5 @@
         </p>
       </section>
     </main>
-
-    <script src="/source/js/index.js"></script>
   </body>
 </html>

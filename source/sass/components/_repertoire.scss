@@ -22,12 +22,12 @@
   &__list {
     position: relative;
     padding: 1rem 0;
+    list-style: none;
   }
 
   &__item {
     color: $color-primary-text;
     text-decoration: none;
-    list-style: none;
     text-align: left;
     font-size: 1.3rem;
     font-weight: 400;

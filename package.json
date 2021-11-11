@@ -2,6 +2,7 @@
   "name": "warmiaduo",
   "version": "1.0.0",
   "description": "website of warmiaduo ensemble",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
@@ -19,11 +20,14 @@
   "homepage": "https://github.com/BigCyjaOne/WarmiaDuoWebsite#readme",
   "devDependencies": {
     "@babel/core": "^7.13.15",
+    "cssnano": "^5.0.10",
+    "postcss": "^8.3.11",
     "sass": "^1.32.11"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
     "jquery": "^3.6.0",
+    "parcel-bundler": "^1.12.5",
     "regenerator-runtime": "^0.13.7",
     "swiper": "^6.6.2"
   }

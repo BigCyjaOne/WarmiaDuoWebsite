@@ -24,6 +24,7 @@ const swiper = new Swiper(".swiper-container", {
 const hamburger = document.querySelector(".navigation");
 const menuWrapper = document.querySelector(".menu-wrapper");
 const links = [...document.querySelectorAll(".menu__link")];
+const mainButton = document.querySelector(".btn--ghost");
 
 links.forEach((link) =>
   link.addEventListener("click", function () {
@@ -41,4 +42,27 @@ links.forEach((link, i) => {
       .querySelector(`#section--${i + 1}`)
       .scrollIntoView({ behavior: "smooth" });
   });
+});
+
+mainButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector("#section--1").scrollIntoView({ behavior: "smooth" });
+});
+
+const allSections = document.querySelectorAll(".section");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
 });
