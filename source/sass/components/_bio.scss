@@ -53,11 +53,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(
-      to right top,
-      rgba($color-primary-dark, 0.6),
-      rgba($color-primary-light, 0.1)
-    );
   }
 
   &__heading {
